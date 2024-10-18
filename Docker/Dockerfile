@@ -1,7 +1,9 @@
+# variables, in this case, used to keep versions
 ARG CUDA_VERSION=11.4.3
 ARG CUDNN_VERSION=8
 ARG UBUNTU_VERSION=20.04
 
+# the image, also know as the base of the docker
 FROM nvidia/cuda:${CUDA_VERSION}-cudnn${CUDNN_VERSION}-runtime-ubuntu${UBUNTU_VERSION}
 
 # set environment variables

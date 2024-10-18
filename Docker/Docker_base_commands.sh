@@ -45,3 +45,5 @@ docker history "imageid" #mostra as camadas da imagem
 docker build -t "nome":"versao" "diretorio"
 
 docker stop $(docker container ls -q) #para todos os docker em execucao
+
+docker system prune #deleta e limpa todo espaço utilizado pelo docker
