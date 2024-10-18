@@ -1,6 +1,7 @@
 version: "3.7"
 services:
 
+
   seq:
     container_name: seq
     image: datalust/seq:2021.2
