@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+
+  seq:
+    container_name: seq
+    image: datalust/seq:2021.2
+    restart: always
+    environment:
+      - ACCEPT_EULA=Y
+    volumes:
+      - /home/wm/logs/seq:/data
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - "5342:80"
