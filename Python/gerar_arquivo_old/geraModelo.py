@@ -4,17 +4,17 @@ import psycopg2
 
 #configs
 #---master
-#db_name = "ncsServiceMonitor"
-#host = "apps.ncs.com.br"
+#db_name = "dbNameHost"
+#host = "hostMaster.com.br"
 #master=True
 
 #---revest
-db_name = "leandroRevest0816"
-host = "10.1.1.115"
+db_name = "dbName"
+host = "host"
 master = False
 
-password = "ewqiop90"
-nomeTabela = 'perfilacessovinculo'
+password = "password"
+nomeTabela = 'nome_tabela'
 
 
 def execut(db, sql):
